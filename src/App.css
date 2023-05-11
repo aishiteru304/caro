@@ -1,38 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(25, 42, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.col-30 {
+    width: 30%;
+}
+
 .App {
-  text-align: center;
+    width: 310px;
+    height: 420px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    height: 40px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.turn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgba(31, 53, 64, 1);
+    color: rgba(168, 190, 203, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.undoIcon {
+    font-size: 40px;
+    background-color: rgba(168, 190, 203, 1);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    float: right;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caroItem {
+    background-color: rgba(31, 53, 64, 1);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    height: 93px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.footer {
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.player1 {
+    padding-top: 8px;
+    background-color: rgba(47, 194, 190, 1);
+    border-radius: 4px;
+}
+
+.ties {
+    border-radius: 4px;
+    padding-top: 8px;
+    background-color: rgba(168, 190, 203, 1);
+}
+
+.player2 {
+    padding-top: 8px;
+    background-color: rgba(242, 180, 61, 1);
+    border-radius: 4px;
+}
+
+.winner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(12 19 25);
+    display: flex;
+    align-items: center;
+}
+
+.winnerContent {
+    background-color: rgb(31 53 64);
+    width: 100%;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.winnerBtn {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+    height: 40px;
+    align-items: center;
+}
+
+.quitBtn {
+    margin-right: 16px;
+    background-color: rgba(168, 190, 203, 1);
+    line-height: 40px;
+    padding: 0 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nextBtn {
+    background-color: rgba(242, 180, 61, 1);
+
 }
