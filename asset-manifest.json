@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/caro/static/css/main.d6e9a3f8.css",
+    "main.js": "/caro/static/js/main.cefc7250.js",
+    "index.html": "/caro/index.html",
+    "main.d6e9a3f8.css.map": "/caro/static/css/main.d6e9a3f8.css.map",
+    "main.cefc7250.js.map": "/caro/static/js/main.cefc7250.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6e9a3f8.css",
+    "static/js/main.cefc7250.js"
+  ]
+}
